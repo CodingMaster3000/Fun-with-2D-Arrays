@@ -12,6 +12,7 @@
             string[,] grid = new string[gridSize, gridSize];
             for (int i = 0; i < gridSize; i++)
             {
+
                 for (int j = 0; j < gridSize; j++)
                 {
                     grid[i, j] = "0";
@@ -19,13 +20,39 @@
             }
             for (int i = 0; i < gridSize; i++)
             {
+                Console.Write("+");
                 for (int j = 0; j < gridSize; j++)
                 {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        Console.Write("-");
+                    }
+                    Console.Write("+");
+                   
+                }
+                Console.WriteLine();
+                Console.Write("|");
+                for (int j = 0; j < gridSize; j++)
+                {
+                    Console.Write(" ");
                     Console.Write($"{grid[i, j]}");
                     Console.Write(" ");
+                    Console.Write("|");
+
                 }
                 Console.WriteLine();
             }
+            Console.Write("+");
+            for (int j = 0; j < gridSize; j++)
+            {
+                for (int k = 0; k < 3; k++)
+                {
+                    Console.Write("-");
+                }
+                Console.Write("+");
+
+            }
+            Console.WriteLine();
             Console.WriteLine("Should the cells of the grid have alternating values? (y/n)");
             string modealternatingInput = Console.ReadLine().ToLower();
             if (modealternatingInput == "y")
@@ -42,14 +69,39 @@
                     }
                     Console.WriteLine();
                 }
+
                 for (int i = 0; i < gridSize; i++)
                 {
+                    Console.Write("+");
                     for (int j = 0; j < gridSize; j++)
                     {
-                        Console.Write($"{grid[i, j]}");
-                        Console.Write(" ");
+                        for (int k = 0; k < 3; k++)
+                        {
+                            Console.Write("-");
+                        }
+                        Console.Write("+");
+
                     }
                     Console.WriteLine();
+                    Console.Write("|");
+                    for (int j = 0; j < gridSize; j++)
+                    {
+                        Console.Write(" ");
+                        Console.Write($"{grid[i, j]}");
+                        Console.Write(" ");
+                        Console.Write("|");
+                    }
+                    Console.WriteLine();
+                }
+                Console.Write("+");
+                for (int j = 0; j < gridSize; j++)
+                {
+                    for (int k = 0; k < 3; k++)
+                    {
+                        Console.Write("-");
+                    }
+                    Console.Write("+");
+
                 }
             }
         }

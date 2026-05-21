@@ -4,7 +4,26 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int gridSize;
+            string input  = Console.ReadLine();
+            gridSize = Convert.ToInt32(input);
+            string[,] grid = new string[gridSize, gridSize];
+            for (int i = 0; i < gridSize; i++)
+            {
+                for (int j = 0; j < gridSize; j++)
+                {
+                    grid[i, j] = "0";
+                }
+            }
+            for (int i = 0; i < gridSize; i++)
+            {
+                for (int j = 0; j < gridSize; j++)
+                {
+                    Console.Write($"{grid[i, j]}");
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

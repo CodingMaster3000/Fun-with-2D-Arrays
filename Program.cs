@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             int gridSize;
+
+            Console.WriteLine("You can create a grid. What size should it have?");
             string input  = Console.ReadLine();
             gridSize = Convert.ToInt32(input);
             string[,] grid = new string[gridSize, gridSize];

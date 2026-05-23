@@ -12,7 +12,6 @@
             string[,] grid = new string[gridSize, gridSize];
             for (int i = 0; i < gridSize; i++)
             {
-
                 for (int j = 0; j < gridSize; j++)
                 {
                     grid[i, j] = "0";
@@ -28,7 +27,6 @@
                         Console.Write("-");
                     }
                     Console.Write("+");
-                   
                 }
                 Console.WriteLine();
                 Console.Write("|");
@@ -38,7 +36,6 @@
                     Console.Write($"{grid[i, j]}");
                     Console.Write(" ");
                     Console.Write("|");
-
                 }
                 Console.WriteLine();
             }
@@ -50,7 +47,6 @@
                     Console.Write("-");
                 }
                 Console.Write("+");
-
             }
             Console.WriteLine();
             Console.WriteLine("Should the cells of the grid have alternating values? (y/n)");
@@ -69,7 +65,6 @@
                     }
                     Console.WriteLine();
                 }
-
                 for (int i = 0; i < gridSize; i++)
                 {
                     Console.Write("+");
@@ -80,7 +75,6 @@
                             Console.Write("-");
                         }
                         Console.Write("+");
-
                     }
                     Console.WriteLine();
                     Console.Write("|");
@@ -101,7 +95,6 @@
                         Console.Write("-");
                     }
                     Console.Write("+");
-
                 }
             }
         }
